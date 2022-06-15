@@ -40,6 +40,13 @@ app.get('/kim', (req, res) => {
     })
 })
 
+app.get('/auto', (req, res) => {
+    res.status(200).json({
+        status: 500,
+        data: 'fuck you dude eiei :)'
+    })
+})
+
 app.post('/xxx', (req, res) => {
 
     let { name } = req.body
