@@ -47,6 +47,13 @@ app.get('/auto', (req, res) => {
     })
 })
 
+app.get('/pu', (req, res) => {
+    res.status(200).json({
+        status: 404,
+        data: 'hello pu api naja :)'
+    })
+})
+
 app.post('/xxx', (req, res) => {
 
     let { name } = req.body
