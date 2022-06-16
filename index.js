@@ -54,6 +54,21 @@ app.get('/pu', (req, res) => {
     })
 })
 
+app.get('/palm', (req, res) => {
+
+    let arr = {
+        id: 5831305015,
+        name: 'plam eiei',
+        gender: 'male',
+        age: 20
+    }
+
+    res.status(200).json({
+        status: 200,
+        data: arr
+    })
+})
+
 app.post('/xxx', (req, res) => {
 
     let { name } = req.body
